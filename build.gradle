@@ -27,10 +27,16 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 */
+plugins {
+   id 'pl.allegro.tech.build.axion-release' version '1.11.0'
+}
 
+version = scmVersion.version
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
+apply plugin: "pl.allegro.tech.build.axion-release"
+
 
 mainClassName = 'hello.HelloWorld'
 
